@@ -1,0 +1,40 @@
+# https://phraseapp.com/blog/posts/unifying-rails-environments-docker-compose/
+
+version: '3'
+services:
+  app: &app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: [".:/app"] # mount current directory into the image
+
+    # use tmpfs for tmp and log for performance and to allow
+    # multiple builds in parallel. Both directories are mounted
+    # into the image AFTER the working directory is mounted.
+    tmpfs: ["/app/tmp", "/app/log"]
+
+  dev: &dev
+    <<: *app
+    environment:
+      RAILS_ENV: "development"
+      DATABASE_URL: "mysql2://mysql/reality?local_infile=true"
+    depends_on:
+      - mysql
+
+  server:
+    <<: *dev
+    command: ["bundle", "exec", "./build/validate-migrated.sh && rails server -b 0.0.0.0"]
+    ports: ["3000:3000"]
+
+  mysql: &mysql
+    image: mysql:5.6.35
+    ports: ["3306"]
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      MYSQL_DATABASE: "reality"
+
+    healthcheck:
+      test: ["CMD", "mysql", "-u", "root", "-e", "select 1"]
+      interval: 1s
+      timeout: 1s
+      retries: 300
