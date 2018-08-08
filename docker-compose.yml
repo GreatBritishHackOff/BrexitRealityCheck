@@ -16,7 +16,7 @@ services:
 
     environment:
       RAILS_ENV: "development"
-      DATABASE_URL: "sqlite3::memory:"
+      #DATABASE_URL: "sqlite3::memory:"
       #DATABASE_URL: "mysql2://mysql/reality?local_infile=true"
   # depends_on:
   #   - mysql
