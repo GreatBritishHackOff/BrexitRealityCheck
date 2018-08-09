@@ -1,0 +1,83 @@
+---
+- title: Immigration
+  body:
+    Which of the following three is closest to how you feel about immigration?
+  answers:
+    - I am happy with how things are now / I was happy with how things were
+      before the Brexit vote.
+    # https://www.irishtimes.com/polopoly_fs/1.2691188.1466361552!/image/image.jpg_gen/derivatives/box_620_330/image.jpg
+    - "I would like to see some restriction on free movement."
+    # https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/22/11/strawberry-farm-worker.jpg?w968h681
+    - "I think we should have total control of our borders and bring in visa
+       for all Europeans visiting or working in the UK."
+    # https://lchrblog.files.wordpress.com/2017/04/brexit-pic.jpg?w=830&h=374&crop=1
+
+- title: Jobs / unemployment
+  body:
+    Which of the following three is closest to how you feel about jobs?
+  answers:
+    - I dont think Britain being in the EU has had a detrimental
+      effect on employment in the UK
+    - Some control of movement is necessary to protect British jobs
+    - I think leaving the EU is essential to protect British jobs
+
+- title: Prices
+  answers:
+    - I think the cost of living will be lower if we stay in the EU
+    - Some short term increases in prices are worth the benefits of a
+      soft Brexit and the economy should soon bounce back.
+    - Rising prices is a small price to pay for regaining our sovereignty.
+  extra:
+    By that way did you know that when we voted to leave the EU the
+    British pound fell 20% in value, making all our imports more expensive
+    and pushing up the cost of living.
+
+- title: NHS
+  answers:
+    - I think the long term future of the NHS is safer if we stay
+      in the EU because of continued access to a workforce and EU funding
+      and partnerships
+    - One of things I want to see if us take control over who has access
+      to our NHS
+    - The NHS should be for British people only. Let's ban health tourism.
+
+- title: Education
+  answers:
+    - I want my children to have access to lower cost and/or higher quality
+      education available in Europe.
+    - I think there is enough pressure on our education system, without having
+      to worry about foreign students.
+    - Our education system should only be for British kids and we should get
+      rid of all foreign language classes.
+  extra:
+    The EU posed no restrictions on our education system.
+
+- title: Control over UK laws
+  answers:
+    - I am scared about the deregulation that could follow leaving the EU
+      and am confident in the current moderating effects on being in the EU.
+    - Let's get rid of silly EU bureaucracy and red tape.
+    - We need to take back control of all our laws and judicial system!
+
+- title: Policing
+  answers:
+    - I would feel safer if we remained in the EU and continued to enjoy
+      cross border cooperation of our police forces.
+    - Even if we leave, it’s in the EU's interest to continue cooperating
+      with our police force.
+    - We will be able to deal better with policing if we have a free hand in it.
+
+- title: Taxes
+  answers:
+    - Remaining in the EU is a key part of seeing taxation become more fair,
+      with new European legislation which will curtain tax avoidance.
+    - I think Britain should be able to control its own taxation.
+    - It’s absurd that faceless bureaucrats in Brussels can control the
+      taxation rates in my country.
+
+- title: Defence
+  answers:
+    - Greater cooperation between states increases our domestic security.
+    - I would like to see Britain have full control of its own defence.
+    - Being in the EU does nothing for our defence, since we would remain in
+      NATO regardless of Brexit.
